@@ -4,7 +4,8 @@ This repository contains examples of bash files. The examples contain programmin
 # Executing a bash file.
 Bash files can typically be executed in two ways
 
-*Using ```bash``` command
-*Executing the file itself
+* Using ```bash``` command
+* Executing the file itself
+
 
 
