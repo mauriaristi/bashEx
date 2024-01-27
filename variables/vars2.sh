@@ -49,13 +49,16 @@ sleep 0.005
 # store finish time on variable end.
 end=`date +%s%N`
 
-
-# 
-
 echo Execution time was `expr $end - $start` nanoseconds
 
-# There is another way to execute an expression. You can embed 
-# the operation in parenthesis preceeded by a "$" symbol 
+# There is another way to execute arithmetic operations. You can embed 
+# the operation in double parenthesis preceeded by a "$" symbol 
+#
+# $(( ... ))
+#
+# * This only works for arithmetic operations.
 
-tdiff=$(($end - $start)) 
+tdiff=$(( end - start )) 
+
+
 echo tdiff:  $tdiff nanoseconds

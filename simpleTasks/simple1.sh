@@ -27,7 +27,7 @@
 # print in console the start date.
 date
 
-echo "Hello $USER! You are successfully running a bash file!" 
+echo "Hello $USER! You are successfully running a bash script file" 
 
 # A simple process to stop processing for 10 seconds
 sleep 10
