@@ -9,3 +9,5 @@ Bash files can typically be executed in two ways
 
 
 
+# Disclaimer
+This material was developed with an educational focus and have no intended application. Use the files and information provided here under your own risk.
