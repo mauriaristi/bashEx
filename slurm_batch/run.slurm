@@ -1,11 +1,13 @@
-#!/bin/sbatch
+#!/bin/bash
 #
 # ======================================================================
 # This file provides a simple example of a slurm batch file that:
-#   - prints date & time at start of execution.
-#   - prints "Hello world"
-#   - waits 5 seconds
-#   - prints the date & time at end of execution.
+#   - prints information to stdout about the environment variables
+#     loaded by slurm
+#   - Sends for execution the file text.exe (you will need to compile 
+#     first this file)
+#   - waits until all executions are finished.
+#   - prints the execution time in miliseconds.
 # 
 # It is setup to execute on 
 #   - single node
@@ -35,7 +37,7 @@
 #          Harry Millwater, PhD
 #
 # Last modification date: 01/21/2024
-# Version: 0.2
+# Version: 0.3
 # ======================================================================
 #
 #
@@ -50,7 +52,7 @@
 #                            #       jobid for this slurm process.
 #SBATCH -p compute1          # Queue (partition) name.
 #SBATCH -N 1                 # Total number of nodes to be requested.
-#SBATCH -n 64                # Total number of tasks to be requested.
+#SBATCH -n 1                 # Total number of tasks to be requested.
 #SBATCH -c 1                 # Number of processors used by each task.
 #SBATCH -t 00:05:00          # Maximum estimated run time (dd-hh:mm:ss)
 #SBATCH --mail-type=ALL      # Mail events to notify (END, FAIL, ALL).
@@ -83,7 +85,7 @@
 tstart=`date +%s%N` 
 echo Starting job - `date`
 
-for i in {1..32}; do
+for i in {1..2}; do
 echo Sending task $i
 	test.exe &
 done
