@@ -16,3 +16,5 @@ bash <filename>
 
 # Disclaimer
 This material was developed with an educational focus and have no intended application. Use the files and information provided here under your own risk.
+
+This information is distributed under the MIT license. See LICENSE file.
