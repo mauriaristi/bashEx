@@ -36,7 +36,7 @@
 for i in {1..11..2}
 do
 
-	echo -n "$i "
+	echo -n "$i"
 done
 
 # This last echo is needed because all previous echo commands were
