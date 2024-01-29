@@ -1,12 +1,17 @@
 # bashEx
-This repository contains examples of bash files. The examples contain programming structures such as for loops, input parameters and other useful tips.
+This repository contains examples of bash files. The examples contain programming structures such as if-else controls, for loop, while loops, input parameters and other useful tips.
 
 # Executing a bash file.
 Bash files can typically be executed in two ways
 
 * Using ```bash``` command
-* Executing the file itself
-
+```
+bash <filename>
+```
+* Executing the file itself. If the file (and user) have execution rights, then the bash file can be executed simply calling the file itself
+```
+./<filename>
+```
 
 
 # Disclaimer
