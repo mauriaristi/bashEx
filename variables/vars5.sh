@@ -43,6 +43,7 @@ nelems=${#arr1[@]}
 echo The array has a total of $nelems
 
 echo All elements in the array: ${arr1[@]}
+echo All indices for the array: ${!arr1[@]}
 
 # Appending an element to the array.
 arr1[3]=filed.txt
