@@ -44,7 +44,7 @@ do
 	# The condition here is evaluating
 	#  ( i + 1 ) % 2 == 0
 
-	if [ "$(( ( i + 1 ) % 2 ))" == 0 ]; then
+	if [[ "$(( ( i + 1 ) % 2 ))" -eq 0 ]]; then
 
 		echo -n "$i "
 	fi
