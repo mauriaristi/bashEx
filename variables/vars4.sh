@@ -2,17 +2,18 @@
 #
 # ======================================================================
 # This file provides a simple example of a bash script that:
-#   - receives a variable from the command line
+#   - receives a variable from the command line. Variable is a set of 
+#     strings.
 #   - Creates a new variable "Var1" that uses the input parameter
 #   - Prints the input received and "Var1" to console. 
 #
 # To run this file on a linux machine, use the command:
 #
-#   bash vars3.sh
+#   bash vars4.sh 5
 #
 # -or simply execute the file (make sure you have correct permissions):
 #  
-#   ./vars3.sh
+#   ./vars4.sh 5
 #
 #
 # DISCLAIMER: 
